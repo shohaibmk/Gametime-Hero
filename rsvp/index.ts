@@ -1,25 +1,3 @@
-# Gametime-Hero
-
-
-## Folder Structure 
-
-```
-Gametime-Hero
-├── rsvp/
-│   ├── models/
-│   │   └── RsvpModels.ts
-│   ├── services/
-│   │   └── RsvpService.ts
-│   ├── utils/
-│   │   └── Logger.ts
-│   └── index.ts
-├── README.md
-└── LICENSE
-```
-
-## Example Use
-
-```typescript
 import { RsvpService } from "./services/RsvpService";
 import { ConsoleLogger } from "./utils/Logger";
 import { Player } from "./models/RsvpModels";
@@ -39,5 +17,3 @@ rsvpService.addOrUpdateRsvp(players[2], "Maybe");
 
 console.log("Confirmed Attendees:", rsvpService.getConfirmedAttendees());
 console.log("RSVP Counts:", rsvpService.getCounts());
-
-```
